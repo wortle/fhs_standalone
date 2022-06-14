@@ -1,0 +1,61 @@
+% This is the template for Family Group Sheets.
+% Make sure there is always a blank template available, before editing this one.
+
+\documentclass{article}
+\usepackage[left=1.5cm,right=1.5cm]{geometry}
+\usepackage{tabularray}
+
+\UseTblrLibrary{booktabs}
+
+\begin{document}
+	\begin{table}[!htbp]
+		\caption{Family Group Sheet}
+		\footnotesize
+		\begin{tblr}{width=1\linewidth,hspan=minimal,
+			colsep=1.5pt,colspec={|Q[c,m,0.3cm]|Q[l,m,0.9cm]
+			|Q[l,m,3cm]|Q[l,m,1.2cm]|Q[l,m,3cm]|Q[l,m,1.2cm]
+			|Q[l,m,3cm]|Q[l,m,1.2cm]|Q[l,m,3cm]|},
+		%% multicolumn cells:
+		cell{1}{1} = {c=2}{l},
+		cell{1}{3,7} = {c=3}{l},
+		cell{2-6}{1} = {c=2}{l},
+		cell{3}{3} = {c=3}{l},
+		cell{7}{1} = {c=5}{h,l},
+		cell{7}{6} = {c=4}{h},
+		cell{8}{1} = {c=3}{c},
+		cell{8}{4,6,8} = {c=2}{c},
+		cell{9-X}{even} = {c=2}{l},
+		cell{Y,Z}{1} = {c=9}{l},
+		%% cell and row styles:
+		cell{1-6}{1,4,6,8} = {font=\bfseries},
+%		cell{1}{1,6} = {font=\normalsize\bfseries},
+		row{7} = {font=\footnotesize\bfseries,belowsep=0pt},
+%		row{8} = {ht=9ex,abovesep=0pt},
+		row{9} = {font=\bfseries},
+		row{Y} = {font=\bfseries,belowsep=0pt},
+		row{Z} = {abovesep=0pt},	
+	}
+
+	\hline
+	Husb. &1-2& name &1-4&1-5& Wife & name &x&x \\ \hline
+	Birth &x& date & Place & where & Birth & date & Place & where \\ \hline
+	Military &x& what &x&& Marr. & date & Place & where \\ \hline
+	Death & x & date & Place & where & Death & date &  Place & where \\ \hline
+	Burial & x & date & Place & where & Burial & date & Place & where \\ \hline
+	Father & x & date & Mother & where & Father & date & Mother & where \\ \hline	\hline
+	\textbf{Notes} {\\Write here} & 7-2 & 7-3 & 7-4 & 7-5 & \textbf{Notes} {\\Here} & 7-7 & 7-8 & 7-9 \\ \hline
+	Children & 8-2 & 8-3 & Birth & 8-5 & Marriage & 8-7 & Death and Burial & 8-9 \\ \hline
+	1 & name &x&  date & 9-5 &  date & 9-7  date & 9-9 \\ \hline
+	2 & name &x& date & 9-5 & date & 9-7 & date & 9-9 \\ \hline
+	3 & name &x& date & 9-5 & date & 9-7 & date & 9-9 \\ \hline
+	4 & name &x& date & 9-5 & date & 9-7 & date & 9-9 \\ \hline
+	5 & name &x& date & 9-5 & date & 9-7 & date & 9-9 \\ \hline
+	6 & name &x& date & 9-5 & date & 9-7 & date & 9-9 \\ \hline
+	7 & name &x& date & 9-5 & date & 9-7 & date & 9-9 \\ \hline
+	8 & name &x& date & 9-5 & date & 9-7 & date & 9-9 \\ \hline
+	9 & name &x& date & 9-5 & date & 9-7 & date & 9-9 \\ \hline
+	10 & name &x& date & 9-5 & date & 9-7 & date & 9-9 \\ \hline
+	Additional Notes {\\Write here}  & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\ \hline
+		\end{tblr}
+	\end{table}
+\end{document}
